@@ -12,7 +12,7 @@ from metagpt.roles import Role
 
 class Architect(Role):
     """Architect: Listen to PRD, responsible for designing API, designing code files"""
-    def __init__(self, name="Bob", profile="Architect", goal="Design a concise, usable, complete python system",
+    def __init__(self, name="Bob", profile="Architect", goal="Design a concise, usable, complete node.js system",
                  constraints="Try to specify good open source tools as much as possible"):
         super().__init__(name, profile, goal, constraints)
         self._init_actions([WriteDesign])
